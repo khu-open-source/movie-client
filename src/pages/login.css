@@ -30,3 +30,16 @@ body {
   .form.signin .form-header div.show-signin {
     color:#f1575b;
   }
+  .form.reset .form-header div.show-reset {
+    color:#f1575b;
+  }
+  .form .form-elements {
+    margin-top:15px;
+  }
+  .form .form-elements .form-element {
+    height:50px;
+    opacity:1;
+    overflow:hidden;
+    transition:all 500ms ease-in-out;
+  }
+  
