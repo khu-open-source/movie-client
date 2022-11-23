@@ -1,12 +1,37 @@
-nav{width:80%;overflow:hidden;height:80px;background-color:#1b2035;margin:50px auto}
+nav{width:80%;overflow:hidden;background-color:#1b2035}
 *{padding:0;margin:0}
 ul,ol{list-style:none}
 a{text-decoration:none;color:#fff;font-size:15px}
 
+div {
+  box-sizing: content-box;
+  width: 100%;
+  color: #1b2035;
+  right: 30px;
+  padding-top: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+option{
+  padding-right: 50px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+option:hover{
+  color:#9c5eb8;
+
+}
+
+
 #nav3 {
   width: 100%;
   text-align: center;
-  padding-bottom: 10px;
+  
 }
 #nav3>h1 {
   line-height: 80px;
@@ -15,20 +40,11 @@ a{text-decoration:none;color:#fff;font-size:15px}
   font-weight: 900;
   position: absolute;
   left: 30px;
-  color: #fff;
+  background: linear-gradient(to right top, #2c9fbc,#c9418c);
+  color: transparent;
+  -webkit-background-clip: text;
 }
-#nav3>select {
-  padding: 0 20px;
-  height: 30px;
-  background-color: #1b2035;
-  color: #fff;
-  right: 30px;
-  position: absolute;
-  top: 12%;
-  transform: translateY(-15px);
-  border: 2px solid #fff;
-  border-radius: 30px;
-}
+
 #nav3>ul {
   display: inline-block;
 }
@@ -37,26 +53,32 @@ a{text-decoration:none;color:#fff;font-size:15px}
   left: 10%;
   line-height: 80px;
   padding: 0 30px;
+  font-size: 18px;
+  font-weight: 500;
 }
 #nav3>form {
-  position: absolute;
+  position:absolute;
   display: inline-block;
+  padding-top: 20px;
+  padding-left: 150px;
 }
 #nav3>form input {
    font: inherit;
-    padding: 0.2rem;
+    padding: 0.3rem;
     border-radius: 6px;
     border: 1px solid #ccc;
-    width: 8rem;
+    width: 10rem;
     max-width: 100%;
 }
 #nav3>form button{
   font: inherit;
     cursor: pointer;
     padding: 0.5rem 0.6rem;
-    border: 1px solid #40005d;
-    background-color: #40005d;
-    color: white;
-    border-radius: 12px;
+    border: 1px solid #9c5eb8;
+    background-color: #9c5eb8;
+    color: #1b2035;
+    font-weight: 500;
+    border-radius: 20px;
     margin-right: 0.6rem;
+    height:0%;
 }
