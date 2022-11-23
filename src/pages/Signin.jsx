@@ -1,3 +1,4 @@
+/* eslint-disable react/button-has-type */
 import './login.css';
 
 const Signin = () => (
@@ -17,9 +18,9 @@ const Signin = () => (
       <div className="form-element">
         <input type="password" placeholder="Confirm password" />
       </div>
-      {/* <div className='form-element'>
-                <button id='submit-btn'>Sign Up</button>
-            </div> */}
+      <div className="form-element">
+        <button id="submit-btn">Sign In</button>
+      </div>
     </div>
   </div>
 );
