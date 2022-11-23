@@ -1,6 +1,6 @@
 import './login.css';
 
-const Signup = () => (
+const Signin = () => (
   <div className="form signup">
     <div className="form-header">
       <div className="show-signup">Sign Up</div>
@@ -8,9 +8,6 @@ const Signup = () => (
     </div>
     <div className="arrow" />
     <div className="form-elements">
-      <div className="form-element">
-        <input type="email" placeholder="Email" />
-      </div>
       <div className="form-element">
         <input type="text" placeholder="User ID" />
       </div>
@@ -27,4 +24,4 @@ const Signup = () => (
   </div>
 );
 
-export default Signup;
+export default Signin;
