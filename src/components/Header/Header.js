@@ -4,12 +4,20 @@ import { Link } from 'react-router-dom';
 
 const Header = () => (
   <header>
+    <div>
+      <option>
+        <Link to="Sign In">Sign In</Link>
+      </option>
+      <option>
+        <Link to="Sign Up">Sign Up</Link>
+      </option>
+      <option>
+        <Link to="Log Out">Log Out</Link>
+      </option>
+    </div>
     <nav id="nav3">
       <h1>OSS-Project</h1>
       <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
         <li>
           <Link to="/popular">Popular</Link>
         </li>
@@ -30,11 +38,6 @@ const Header = () => (
         <input type="text" />
         <button type="submit">Search</button>
       </form>
-      <select>
-        <option>Log Out</option>
-        <option>Sign In</option>
-        <option>Sign Up</option>
-      </select>
     </nav>
   </header>
 );
