@@ -15,7 +15,7 @@ div {
   cursor: pointer;
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  autoprefixer: end;
 }
 
 option{
@@ -50,7 +50,7 @@ nav {
   left: 30px;
   background: linear-gradient(to right top, #2c9fbc,#c9418c);
   color: transparent;
-  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 #nav3>ul {
