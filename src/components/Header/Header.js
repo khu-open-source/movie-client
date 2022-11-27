@@ -2,24 +2,26 @@ import './Header.css';
 
 import { Link } from 'react-router-dom';
 
+import MovieInput from '../Movies/MovieInput';
+
 const Header = () => (
   <header>
     <div>
       <option>
-        <Link to="Sign In">Sign In</Link>
+        <Link to="/signin">Sign In</Link>
       </option>
       <option>
-        <Link to="Sign Up">Sign Up</Link>
-      </option>
-      <option>
-        <Link to="Log Out">Log Out</Link>
+        <Link to="/signup">Sign Up</Link>
       </option>
     </div>
     <nav id="nav3">
       <h1>OSS-Project</h1>
       <ul>
         <li>
-          <Link to="/popular">Popular</Link>{' '}
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/popular">Popular</Link>
         </li>
         <li>
           <Link to="/animation">Animation</Link>
@@ -34,10 +36,7 @@ const Header = () => (
           <Link to="/action">Action</Link>
         </li>
       </ul>
-      <form>
-        <input type="text" />
-        <button type="submit">Search</button>
-      </form>
+      <MovieInput />
     </nav>
   </header>
 );
