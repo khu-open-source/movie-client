@@ -63,7 +63,14 @@ nav {
   padding: 0 30px;
   font-size: 18px;
   font-weight: 500;
+  list-style: none;
 }
+
+li:hover{
+  color:#c9418c;
+  
+}
+
 #nav3>form {
   position:absolute;
   display: inline-block;
