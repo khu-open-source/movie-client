@@ -1,7 +1,10 @@
-nav{width:80%;overflow:hidden;background-color:#1b2035}
 *{padding:0;margin:0}
-ul,ol{list-style:none}
-a{text-decoration:none;color:#fff;font-size:15px}
+
+a{
+  text-decoration:none;
+  color:#fff;
+  font-size:15px
+}
 
 div {
   box-sizing: content-box;
@@ -24,7 +27,12 @@ option{
 
 option:hover{
   color:#9c5eb8;
+}
 
+nav {
+  width:80%;
+  overflow:hidden;
+  background-color:#1b2035
 }
 
 
