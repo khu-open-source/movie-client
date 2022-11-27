@@ -16,7 +16,7 @@ const Signin = () => (
         <input type="password" placeholder="Password" />
       </form>
       <form className="form-element">
-        <button id="submit-btn">Sign In</button>{' '}
+        <button id="submit-btn">Sign In</button>
       </form>
     </div>
   </div>
