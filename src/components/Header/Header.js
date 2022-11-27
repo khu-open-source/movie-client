@@ -19,7 +19,7 @@ const Header = () => (
       <h1>OSS-Project</h1>
       <ul>
         <li>
-          <Link to="/popular">Popular</Link>
+          <Link to="/popular">Popular</Link>{' '}
         </li>
         <li>
           <Link to="/animation">Animation</Link>
