@@ -2,41 +2,42 @@ import './Header.css';
 
 import { Link } from 'react-router-dom';
 
-import MovieInput from '../Movies/MovieInput';
-
 const Header = () => (
   <header>
-    <div>
+    <div className="header-option">
       <option>
-        <Link to="/signin">Sign In</Link>
+        <Link to="Sign In">Sign In</Link>
       </option>
       <option>
-        <Link to="/signup">Sign Up</Link>
+        <Link to="Sign Up">Sign Up</Link>
+      </option>
+      <option>
+        <Link to="Log Out">Log Out</Link>
       </option>
     </div>
     <nav id="nav3">
       <h1>OSS-Project</h1>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/popular">Popular</Link>
-        </li>
-        <li>
-          <Link to="/animation">Animation</Link>
-        </li>
-        <li>
-          <Link to="/romance">Romance</Link>
-        </li>
-        <li>
-          <Link to="/science">Science Fiction</Link>
-        </li>
-        <li>
-          <Link to="/action">Action</Link>
-        </li>
+      <ul className="header-ul">
+        <Link to="/popular">
+          <li>Popular</li>
+        </Link>
+        <Link to="/animation">
+          <li>Animation</li>
+        </Link>
+        <Link to="/romance">
+          <li>Romance</li>
+        </Link>
+        <Link to="/science">
+          <li>Science Fiction</li>
+        </Link>
+        <Link to="/action">
+          <li>Action</li>
+        </Link>
       </ul>
-      <MovieInput />
+      <form>
+        <input type="text" />
+        <button type="submit">Search</button>
+      </form>
     </nav>
   </header>
 );
