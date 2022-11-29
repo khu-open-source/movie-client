@@ -9,7 +9,6 @@ a{
 .header-option{
   box-sizing: content-box;
   width: 100%;
-  color: #1b2035;
   right: 30px;
   padding-top: 30px;
   cursor: pointer;
@@ -39,9 +38,11 @@ nav {
 #nav3 {
   width: 100%;
   text-align: center;
-  
+  margin-bottom: 60px;
+
 }
-#nav3>h1 {
+
+.homebtn {
   line-height: 80px;
   display: block;
   font-size: 30px;
@@ -52,6 +53,8 @@ nav {
   color: transparent;
   background-clip: text;
 }
+
+
 
 #nav3>ul {
   display: inline-block;
