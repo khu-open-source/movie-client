@@ -22,7 +22,9 @@ const Signin = () => (
         <input type="password" placeholder="Password" />
       </form>
       <form className="form-element">
-        <button id="submit-btn">Sign In</button>
+        <Link to="/">
+          <button id="submit-btn">Sign In</button>
+        </Link>
       </form>
     </div>
   </div>
