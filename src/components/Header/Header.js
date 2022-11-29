@@ -5,18 +5,20 @@ import { Link } from 'react-router-dom';
 const Header = () => (
   <header>
     <div className="header-option">
-      <option>
-        <Link to="Sign In">Sign In</Link>
-      </option>
-      <option>
-        <Link to="Sign Up">Sign Up</Link>
-      </option>
-      <option>
-        <Link to="Log Out">Log Out</Link>
-      </option>
+      <Link to="Sign In">
+        <option>Sign In</option>
+      </Link>
+      <Link to="Sign Up">
+        <option>Sign Up</option>
+      </Link>
+      <Link to="/">
+        <option>Log Out</option>
+      </Link>
     </div>
     <nav id="nav3">
-      <h1>OSS-Project</h1>
+      <Link to="/">
+        <h1 className="homebtn">OSS-Project</h1>
+      </Link>
       <ul className="header-ul">
         <Link to="/popular">
           <li>Popular</li>
