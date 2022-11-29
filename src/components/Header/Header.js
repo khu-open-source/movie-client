@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 const Header = () => (
   <header>
     <div className="header-option">
-      <Link to="Sign In">
+      <Link to="/SignIn">
         <option>Sign In</option>
       </Link>
-      <Link to="Sign Up">
+      <Link to="/SignUp">
         <option>Sign Up</option>
       </Link>
       <Link to="/">
