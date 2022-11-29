@@ -2,6 +2,7 @@
 body {
     background:#2c2c2c;
   }
+
 .form {
     position:absolute;
     top:50%;
@@ -17,20 +18,25 @@ body {
     display:flex;
     align-items:center;
     text-align:center;
+    background:#2c2c2c;
 }
-.form-header > li {
+.form-header  .show-sign {
     width:calc(100% / 3);
     color:#ddd;
     font-size:18px;
     font-weight:600;
     cursor:pointer;
+    
 }
-.form.signup .form-header li.show-signup {
+
+.form-header li {
+    list-style: none;
+}
+
+.form-header li.show-sign :hover {
     color:#f1575b;
 }
-.form.signin .form-header li.show-signin {
-    color:#f1575b;
-}
+
 .form-elements {
     margin-top:15px;
 }
@@ -81,8 +87,3 @@ body {
 
 
 
-.form.signin .form-elements > div:nth-child(3) {
-    height:0px;
-    opacity:0;
-}
-  
