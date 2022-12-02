@@ -69,8 +69,8 @@ const App = () => (
           <Route path="/animation" element={<Animation movies={DUMMY_MOVIES} />} />
           <Route path="/romance" element={<Romance movies={DUMMY_MOVIES} />} />
           <Route path="/science" element={<Science movies={DUMMY_MOVIES} />} />
-          <Route path="/signin" element={<Signin />} />
-          <Route path="/signup" element={<Signup />} />
+          <Route path="/SignIn" element={<Signin />} />
+          <Route path="/SignUp" element={<Signup />} />
           <Route path="/search/:title" element={<Search movies={DUMMY_MOVIES} />} />
         </Routes>
       </BrowserRouter>
