@@ -71,6 +71,8 @@ nav {
 
 .header-ul li:hover{
   color:#c9418c;
+  transform:translateY(-5px);
+  transition: 0.8s;
   
 }
 
