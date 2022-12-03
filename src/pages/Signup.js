@@ -28,8 +28,8 @@ const Signup = () => (
         <input type="password" placeholder="Confirm password" />
       </form>
       <form className="form-element">
-        <Link to="/">
-          <button id="submit-btn">Sign In</button>
+        <Link to="/SignIn">
+          <button id="submit-btn">Sign Up</button>
         </Link>
       </form>
     </div>
