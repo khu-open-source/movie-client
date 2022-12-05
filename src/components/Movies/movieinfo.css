@@ -1,9 +1,17 @@
 .movie-info {
-   margin-top: 50px;
-   display:flex;
-   justify-content:center;
+    margin-top: 50px;
+    display:flex;
+    justify-content:center; 
 }
 
-.movie-list{
-    list-style: none;
+.movie-poster img {
+    width: 500px;
+    height: 500px;
 }
+.movie-container  { 
+    margin-bottom: 10rem; 
+    display: flex; 
+    flex-basis: 48%; 
+    background: #fff; 
+    box-shadow: 4px 4px 14px 0px #cacaca; 
+} 
