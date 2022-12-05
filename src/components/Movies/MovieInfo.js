@@ -4,7 +4,7 @@ import './movieinfo.css';
 
 const MovieInfo = (props) => (
   <div className="movie-info">
-    <li className="movie-list">
+    <li className="movie-container">
       <div className="movie-poster">
         <img alt="movieIMG" src={props.img} />
       </div>
