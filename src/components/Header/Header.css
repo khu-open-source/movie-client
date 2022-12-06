@@ -6,10 +6,9 @@ a{
   font-size:15px
 }
 
-div {
+.header-option{
   box-sizing: content-box;
   width: 100%;
-  color: #1b2035;
   right: 30px;
   padding-top: 30px;
   cursor: pointer;
@@ -26,7 +25,7 @@ option{
 
 
 option:hover{
-  color:#9c5eb8;
+  color:#c9418c;
 }
 
 nav {
@@ -39,9 +38,11 @@ nav {
 #nav3 {
   width: 100%;
   text-align: center;
-  
+  margin-bottom: 60px;
+
 }
-#nav3>h1 {
+
+.homebtn {
   line-height: 80px;
   display: block;
   font-size: 30px;
@@ -50,8 +51,10 @@ nav {
   left: 30px;
   background: linear-gradient(to right top, #2c9fbc,#c9418c);
   color: transparent;
-  -webkit-background-clip: text;
+  background-clip: text;
 }
+
+
 
 #nav3>ul {
   display: inline-block;
@@ -66,8 +69,10 @@ nav {
   list-style: none;
 }
 
-li:hover{
+.header-ul li:hover{
   color:#c9418c;
+  transform:translateY(-5px);
+  transition: 0.8s;
   
 }
 

@@ -1,7 +1,8 @@
 
-body {
-  background:#2c2c2c;
+body{
+  background: #353a4f;
 }
+
 .form {
   position:absolute;
   top:50%;
@@ -17,8 +18,11 @@ body {
   display:flex;
   align-items:center;
   text-align:center;
+  background-color:transparent;
+ 
 }
-.form-header > li {
+
+.form-header  .show-sign {
   width:calc(100% / 3);
   color:#ddd;
   font-size:18px;
@@ -26,8 +30,13 @@ body {
   cursor:pointer;
 }
 
-.form-header li.show-signin {
+.form-header li {
+  list-style: none;
+}
+
+.form-header li.show-sign :hover {
   color:#f1575b;
+  transition: 0.8s;
 }
 
 .form-elements {
@@ -75,6 +84,10 @@ body {
 }
 
 .form.signup .arrow {
-  left:calc(calc(100% / 3) + calc(calc(100% / 3) / 2.2)) ;
+  left:calc(calc(100% / 3) / 2);
 }
+
+
+
+
 

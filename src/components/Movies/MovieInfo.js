@@ -1,9 +1,20 @@
+import './movieinfo.css';
+
+// import styled from 'styled-components';
+
 const MovieInfo = (props) => (
-  <li>
-    <h2>{props.title}</h2>
-    <div>{props.genre}</div>
-    <div>{props.rank}</div>
-  </li>
+  <div className="movie-info">
+    <li className="movie-container">
+      <div className="movie-poster">
+        <img alt="movieIMG" src={props.img} />
+      </div>
+      <div className="movie-box">
+        <h1 className="movie-title">{props.title}</h1>
+        <div className="movie-genre">{props.genre}</div>
+        <div className="movie-rank">{props.rank}</div>
+      </div>
+    </li>
+  </div>
 );
 
 export default MovieInfo;

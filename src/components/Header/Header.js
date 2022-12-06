@@ -4,35 +4,37 @@ import { Link } from 'react-router-dom';
 
 const Header = () => (
   <header>
-    <div>
-      <option>
-        <Link to="Sign In">Sign In</Link>
-      </option>
-      <option>
-        <Link to="Sign Up">Sign Up</Link>
-      </option>
-      <option>
-        <Link to="Log Out">Log Out</Link>
-      </option>
+    <div className="header-option">
+      <Link to="/SignIn">
+        <option>Sign In</option>
+      </Link>
+      <Link to="/SignUp">
+        <option>Sign Up</option>
+      </Link>
+      <Link to="/">
+        <option>Log Out</option>
+      </Link>
     </div>
     <nav id="nav3">
-      <h1>OSS-Project</h1>
-      <ul>
-        <li>
-          <Link to="/popular">Popular</Link>{' '}
-        </li>
-        <li>
-          <Link to="/animation">Animation</Link>
-        </li>
-        <li>
-          <Link to="/romance">Romance</Link>
-        </li>
-        <li>
-          <Link to="/science">Science Fiction</Link>
-        </li>
-        <li>
-          <Link to="/action">Action</Link>
-        </li>
+      <Link to="/">
+        <h1 className="homebtn">OSS-Project</h1>
+      </Link>
+      <ul className="header-ul">
+        <Link to="/popular">
+          <li>Popular</li>
+        </Link>
+        <Link to="/animation">
+          <li>Animation</li>
+        </Link>
+        <Link to="/romance">
+          <li>Romance</li>
+        </Link>
+        <Link to="/science">
+          <li>Science Fiction</li>
+        </Link>
+        <Link to="/action">
+          <li>Action</li>
+        </Link>
       </ul>
       <form>
         <input type="text" />

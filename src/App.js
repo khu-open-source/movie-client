@@ -8,6 +8,8 @@ import Popular from './pages/Popular';
 import Romance from './pages/Romance';
 import Science from './pages/Science';
 import Search from './pages/Search';
+import Signin from './pages/Signin';
+import Signup from './pages/Signup';
 
 const DUMMY_MOVIES = [
   {
@@ -67,6 +69,8 @@ const App = () => (
           <Route path="/animation" element={<Animation movies={DUMMY_MOVIES} />} />
           <Route path="/romance" element={<Romance movies={DUMMY_MOVIES} />} />
           <Route path="/science" element={<Science movies={DUMMY_MOVIES} />} />
+          <Route path="/SignIn" element={<Signin />} />
+          <Route path="/SignUp" element={<Signup />} />
           <Route path="/search/:title" element={<Search movies={DUMMY_MOVIES} />} />
         </Routes>
       </BrowserRouter>
