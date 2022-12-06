@@ -8,9 +8,11 @@ const MovieInfo = (props) => (
       <div className="movie-poster">
         <img alt="movieIMG" src={props.img} />
       </div>
-      <h2 className="movie-title">{props.title}</h2>
-      <div className="movie-genre">{props.genre}</div>
-      <div className="movie-rank">{props.rank}</div>
+      <div className="movie-box">
+        <h1 className="movie-title">{props.title}</h1>
+        <div className="movie-genre">{props.genre}</div>
+        <div className="movie-rank">{props.rank}</div>
+      </div>
     </li>
   </div>
 );
