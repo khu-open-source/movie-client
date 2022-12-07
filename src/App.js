@@ -1,81 +1,38 @@
+import { useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { RecoilRoot } from 'recoil';
 
-import Action from './pages/Action';
-import Animation from './pages/Animation';
+import GenrePage from './pages/GenrePage';
 import Home from './pages/Home';
 import Popular from './pages/Popular';
-import Romance from './pages/Romance';
-import Science from './pages/Science';
-import Search from './pages/Search';
 import Signin from './pages/Signin';
 import Signup from './pages/Signup';
 
-const DUMMY_MOVIES = [
-  {
-    id: '6',
-    title: 'fuck',
-    genre: 'Romance',
-    rank: 6,
-    img: '/images/fuck.png',
-  },
-  {
-    id: '1',
-    title: 'apple',
-    genre: 'Action',
-    rank: 1,
-    img: '/images/apple.png',
-  },
-  {
-    id: '2',
-    title: 'banana',
-    genre: 'Animation',
-    rank: 2,
-    img: '/images/banana.png',
-  },
-  {
-    id: '3',
-    title: 'candy',
-    genre: 'Romance',
-    rank: 3,
-    img: '/images/candy.png',
-  },
-  {
-    id: '4',
-    title: 'dragon',
-    genre: 'Science',
-    rank: 4,
-    img: '/images/dragon.png',
-  },
-  {
-    id: '5',
-    title: 'elephant',
-    genre: 'Science',
-    rank: 5,
-    img: '/images/elephant.png',
-  },
-];
+const App = () => {
+  const [movies, setMovies] = useState([]);
 
-DUMMY_MOVIES.sort((a, b) => a.rank - b.rank);
+  const getMovies = async () => {
+    const response = await fetch('http://43.200.75.98/movie/popular');
+    const data = await response.json();
+    setMovies(data);
+  };
 
-const App = () => (
-  <div className="App">
-    <RecoilRoot>
+  getMovies();
+
+  return (
+    <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home movies={DUMMY_MOVIES} />} />
-          <Route path="/popular" element={<Popular movies={DUMMY_MOVIES} />} />
-          <Route path="/action" element={<Action movies={DUMMY_MOVIES} />} />
-          <Route path="/animation" element={<Animation movies={DUMMY_MOVIES} />} />
-          <Route path="/romance" element={<Romance movies={DUMMY_MOVIES} />} />
-          <Route path="/science" element={<Science movies={DUMMY_MOVIES} />} />
-          <Route path="/SignIn" element={<Signin />} />
-          <Route path="/SignUp" element={<Signup />} />
-          <Route path="/search/:title" element={<Search movies={DUMMY_MOVIES} />} />
+          <Route path="/" element={<Home movies={movies} />} />
+          <Route path="/popular" element={<Popular movies={movies} />} />
+          <Route path="/action" element={<GenrePage genre="Action" movies={movies} />} />
+          <Route path="/fantasy" element={<GenrePage genre="Fantasy" movies={movies} />} />
+          <Route path="/romance" element={<GenrePage genre="Romance" movies={movies} />} />
+          <Route path="/science" element={<GenrePage genre="Science Fiction" movies={movies} />} />
+          <Route path="/signin" element={<Signin />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
       </BrowserRouter>
-    </RecoilRoot>
-  </div>
-);
-
+    </div>
+  );
+};
 export default App;
