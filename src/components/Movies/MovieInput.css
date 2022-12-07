@@ -1,0 +1,19 @@
+.movieInput {
+    display: flex;
+    justify-content: center;
+}
+
+#nav3>form {
+    position:absolute;
+    display: inline-block;
+    padding-top: 20px;
+    padding-left: 150px;
+  }
+  #nav3>form input {
+     font: inherit;
+      padding: 0.3rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      width: 10rem;
+      max-width: 100%;
+  }
