@@ -1,8 +1,17 @@
 import { atom } from 'recoil';
 
-const enteredTitleAtom = atom({
-  key: 'enteredTitle',
-  default: '',
+export const Account = atom({
+  key: 'account',
+  default: [
+    {
+      id: 'master',
+      email: 'master@master.com',
+      password: 'master',
+    },
+  ],
 });
 
-export { enteredTitleAtom };
+export const isLogined = atom({
+  key: 'isLogined',
+  default: false,
+});
