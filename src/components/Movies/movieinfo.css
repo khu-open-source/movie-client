@@ -33,3 +33,7 @@
 }
 
 
+.genre-position {
+    display: flex;
+    justify-content: space-between;
+}
