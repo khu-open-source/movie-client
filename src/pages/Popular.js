@@ -1,13 +1,11 @@
-import Header from '../components/Header/Header';
-import MovieList from '../components/Movies/MovieList';
+import Home from './Home';
 
 const Popular = (props) => {
-  const popularMovies = props.movies.filter((movie) => movie.rank < 101);
+  const popularMovies = props.movies.filter((movie) => movie.popularity > 3000);
 
   return (
     <div>
-      <Header />
-      <MovieList movies={popularMovies} />
+      <Home movies={popularMovies} />
     </div>
   );
 };
