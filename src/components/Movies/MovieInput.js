@@ -1,26 +1,9 @@
-import { useRecoilState } from 'recoil';
+import './MovieInput.css';
 
-import { enteredTitleAtom } from '../../store/atom';
-
-const MovieInput = () => {
-  const [enteredTitle, setEnteredTitle] = useRecoilState(enteredTitleAtom);
-
-  const titleChangeHandler = (event) => {
-    setEnteredTitle(event.target.value);
-  };
-
-  const titleSearchHandler = async () => {
-    window.location.href = `/search/${enteredTitle}`;
-  };
-
-  return (
-    <form>
-      <input onChange={titleChangeHandler} />
-      <button type="button" onClick={titleSearchHandler}>
-        Search
-      </button>
-    </form>
-  );
-};
+const MovieInput = (props) => (
+  <form id="nav3" className="movieInput">
+    <input type="text" value={props.search} onChange={props.onSearch} />
+  </form>
+);
 
 export default MovieInput;
