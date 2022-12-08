@@ -10,18 +10,33 @@ const MovieInfo = (props) => (
       <div className="movie-box">
         <h1 className="movie-title">{props.title}</h1>
         <div className="genre-position">
-          장르:
+          <b>장르:</b>
           {props.genre.map((genre, index) => (
             <div key={index} className="movie-genre">
-              {genre}{' '}
+              {genre}
             </div>
           ))}
         </div>
-        <div className="movie-rank">인기도: {props.popularity}</div>
-        <div>줄거리: {props.overview}</div>
-        <div>개봉일: {props.date}</div>
-        {!props.adult && <div>청소년 관람 가능</div>}
-        {props.adult && <div>청소년 관람 불가</div>}
+        <div className="movie-rank">
+          <b>인기도: </b> {props.popularity}
+        </div>
+        <div>
+          <b>줄거리:</b>
+          {props.overview}
+        </div>
+        <div>
+          <b>개봉일:</b> {props.date}
+        </div>
+        {!props.adult && (
+          <div>
+            <b>청소년 관람 불가</b>
+          </div>
+        )}
+        {props.adult && (
+          <div>
+            <b>청소년 관람 불가</b>
+          </div>
+        )}
       </div>
     </li>
   </div>
