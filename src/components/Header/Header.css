@@ -6,6 +6,13 @@ a{
   font-size:15px
 }
 
+.header-span {
+  text-decoration:none;
+  color:#fff;
+  font-size:15px;
+  margin-right: 10px;
+}
+
 .header-option{
   box-sizing: content-box;
   width: 100%;
